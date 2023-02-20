@@ -1,0 +1,40 @@
+/* --------general selector ---------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* font-family: 'Livvic', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* #region--------Utiliti ---------- */
+
+:root {
+    --pb-white: #ffffff;
+    --pb-primary: #9792E4;
+    --pb-secondary: #0084FD;
+    --pb-firts_cards: #B5DDFF;
+    --pb-Dark: #333333;
+    --pb-flash: #FDC15F;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+}
+
+.container-sm {
+    margin: auto;
+    width: 35%;
+}
+
+.d-flex {
+    display: flex;
+}
