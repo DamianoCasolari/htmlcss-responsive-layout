@@ -28,6 +28,7 @@ body {
 .container {
     margin: auto;
     width: 70%;
+    max-width: 1152px;
 }
 
 .container-sm {
@@ -51,22 +52,25 @@ body {
 .padding_more {
     padding: 30px 20px 50px 20px;
 }
+
 .padding_less {
     padding: 30px 20px 30px 20px;
 }
 
-.margin_negative{
+.margin_negative {
     margin: 0 -10px;
 }
 
 .txt-c {
     text-align: center;
 }
+
 /* column selector */
 
 .col_4 {
     width: calc(100% / 12 * 4);
 }
+
 .col_6 {
     width: 50%;
 }
@@ -90,21 +94,22 @@ body {
     background-color: yellow;
 }
 
-.debug #app_main .app_store_container {
+/* .debug #app_main .app_store_container {
     height: 600px;
     background-color: #0084FD;
-}
+} */
 
 .debug .container {
-border: 1px dashed black;
+    border: 1px dashed black;
 }
 
-.debug #app_main .strategy_container {
+/* .debug #app_main .strategy_container {
     height: 600px;
     background-color: #0084FD;
-}
+} */
 .debug #app_main .card {
-    
+
+    height: 100px;
     background-color: blue;
     border: 1px solid yellow;
 }
@@ -124,10 +129,12 @@ border: 1px dashed black;
 
 #app_header {
     background-color: var(--pb-secondary);
-    
+
     position: sticky;
     top: 0;
     left: 0;
+    max-width: 1152px;
+    margin: auto;
 }
 
 #app_header>.col_12 {
@@ -143,14 +150,26 @@ border: 1px dashed black;
     background-color: var(--pb-white);
 }
 
+/* strategy benefit */
 
-
-
-#strategy_planning {
+#strategy_planning,
+#benefict {
     background-color: var(--pb-primary);
 }
 
+/* testimonial */
 
+
+
+#testimonial .d_flex {
+    align-items: center;
+}
+
+/* benefit  */
+
+#benefit .card {
+    align-items: center;
+}
 
 /* *********************
         RESPONSIVE
@@ -158,18 +177,15 @@ border: 1px dashed black;
 
 /* Tablet responsive */
 @media screen and (min-width: 480px) {
-    .col_12 {
-        max-width: 1200px;
-        margin: auto;
-    }
+
     .col_8 {
         width: calc(100% / 12 * 8);
     }
-    
+
     .col_6 {
         width: 50%;
     }
-    
+
     .col_4 {
         width: calc(100% / 12 * 4);
     }
@@ -178,21 +194,16 @@ border: 1px dashed black;
 /* deskopt responsive */
 
 @media screen and (min-width: 768px) {
-    .col_12 {
-        max-width: 1200px;
-        margin: auto;
-    }
+
     .col_8 {
         width: calc(100% / 12 * 8);
     }
-    
+
     .col_6 {
         width: 50%;
     }
-    
+
     .col_4 {
         width: calc(100% / 12 * 4);
     }
 }
-
-
