@@ -162,13 +162,24 @@ body {
 
 #testimonial .d_flex {
     align-items: center;
+    flex-direction: column;
 }
+
 
 /* benefit  */
 
 #benefit .card {
     align-items: center;
 }
+
+/* *********************
+        footer
+******************* */
+
+#app_footer {
+    background-color: var(--pb-Dark);
+}
+
 
 /* *********************
         RESPONSIVE
@@ -186,6 +197,10 @@ body {
     }
     .col_6 {
         width: 50%;
+    }
+
+    #testimonial .d_flex {
+        flex-direction: row;
     }
 
     .container_sm {
