@@ -14,7 +14,7 @@ body {
 
 
 
-/* #region--------Utiliti ---------- */
+/* #region--------Utiliti  Selector ---------- */
 
 :root {
     --pb-white: #ffffff;
@@ -37,4 +37,66 @@ body {
 
 .d-flex {
     display: flex;
+}
+
+/* col selector */
+
+.col_12 {
+    width: 100%;
+}
+
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col_6 {
+    width: 50%;
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+
+
+
+/* #endregion--------Utiliti  Selector ---------- */
+
+
+/* #region--------Debug  Selector ---------- */
+
+.debug #app_header .col_12 {
+    background-color: yellow;
+}
+
+
+/* #endregion--------Debug  Selector ---------- */
+
+/* #region--------Responsive  Selector ---------- */
+
+@media screen and (min-width: 768px) {
+    .col_12 {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+/* #endregion--------Responsive  Selector ---------- */
+
+
+
+/* *********************
+        header
+******************* */
+
+#app_header {
+    background-color: var(--pb-secondary);
+    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#app_header>.col_12 {
+    padding: 10px 20px;
+    line-height: 50px;
 }
