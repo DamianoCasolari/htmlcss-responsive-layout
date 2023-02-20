@@ -35,9 +35,17 @@ body {
     width: 35%;
 }
 
-.d-flex {
+.d_flex {
     display: flex;
 }
+
+.padding_more {
+    padding: 30px 20px 50px 20px;
+}
+.padding_less {
+    padding: 30px 20px 30px 20px;
+}
+
 
 /* col selector */
 
@@ -68,10 +76,21 @@ body {
     background-color: yellow;
 }
 
+.debug #app_main .app_store_container {
+    height: 600px;
+    background-color: #0084FD;
+}
 
 /* #endregion--------Debug  Selector ---------- */
 
 /* #region--------Responsive  Selector ---------- */
+
+/* Tablet responsive */
+@media screen and (min-width: 480px) {
+   
+}
+
+/* deskopt responsive */
 
 @media screen and (min-width: 768px) {
     .col_12 {
@@ -90,7 +109,7 @@ body {
 
 #app_header {
     background-color: var(--pb-secondary);
-    height: 50px;
+    
     position: sticky;
     top: 0;
     left: 0;
@@ -98,5 +117,13 @@ body {
 
 #app_header>.col_12 {
     padding: 10px 20px;
-    line-height: 50px;
+    align-items: center;
+}
+
+/* *********************
+        main
+******************* */
+
+#app_main {
+    background-color: var(--pb-white);
 }
