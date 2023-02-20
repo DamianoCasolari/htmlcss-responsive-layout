@@ -27,13 +27,12 @@ body {
 
 .container {
     margin: auto;
-    width: 70%;
     max-width: 1152px;
 }
 
-.container-sm {
+.container_sm {
     margin: auto;
-    width: 35%;
+    width: 100%;
 }
 
 .d_flex {
@@ -188,6 +187,10 @@ body {
     .col_6 {
         width: 50%;
     }
+
+    .container_sm {
+        width: 70%;
+    }
 }
 
 /* deskopt responsive */
@@ -204,5 +207,9 @@ body {
 
     .col_4 {
         width: calc(100% / 12 * 4);
+    }
+
+    .container_sm {
+        width: 40%;
     }
 }
