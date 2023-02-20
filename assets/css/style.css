@@ -12,7 +12,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
+img {
+    width: 100%;
+}
+a:not(.special) {
+    text-decoration: none;
+}
 
 /* #region--------Utiliti  Selector ---------- */
 
@@ -45,7 +50,7 @@ body {
 }
 
 .card {
-    padding: 10px;
+    padding: 25px;
 }
 
 
@@ -62,7 +67,7 @@ body {
     margin: 0 -10px;
 }
 
-.txt-c {
+.txt_c {
     text-align: center;
 }
 
@@ -73,15 +78,15 @@ body {
 /* column selector */
 
 .col_4 {
-    width: calc(100% / 12 * 4);
+    width: calc(100% / 12 * 4 - 20px);
 }
 
 .col_6 {
-    width: 50%;
+    width: calc(50% - 20px);
 }
 
 .col_8 {
-    width: calc(100% / 12 * 8);
+    width: calc(100% / 12 * 8 - 20px);
 }
 
 .col_12 {
@@ -150,6 +155,7 @@ body {
 .menù {
     text-align: end;
     cursor: pointer;
+    font-size: 22px;
 }
 .fa-bars {
     color: var(--pb-white);
@@ -159,7 +165,7 @@ nav {
 }
 nav a {
     color: white;
-    text-decoration: none;
+    
     margin: 0 5px;
     
 }
@@ -178,14 +184,74 @@ nav .btn {
     background-color: var(--pb-white);
 }
 
-/* strategy benefit */
+/* -----APP STORE SECTION ----- */
+
+.app_store_container .card {
+    background-color: var(--pb-firts_cards);
+    border-radius: 20px;
+    margin: 20px 10px 0 10px;
+    
+}
+
+/* first card */
+.app_store_container .col_8 {
+    flex-direction: column;
+    padding: 25px 25px 0 25px;
+
+}
+.info_AppStore_card {
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+.info_AppStore_card * {
+    margin: 10px 0;
+    
+}
+.info_AppStore_card h3 {
+    color: var(--pb-secondary);
+}
+
+.info_AppStore_card i {
+    margin: 0 8px;
+}
+.info_AppStore_card .btn {
+background-color: var(--pb-secondary);
+color: white;
+padding: 10px 30px;
+display: inline-block;
+font-size: 20px;
+letter-spacing: 3px;
+}
+
+.phone {
+    justify-content: center;
+    align-items: end;
+    
+}
+
+.phone img {
+    width: 70%;
+}
+
+/* other cards */
+
+.app_store_container .col_4 i{
+    color: var(--pb-secondary);
+    font-size: 100px;
+}
+
+
+/* -----STRATEGY SECTION ----- */
 
 #strategy_planning,
 #benefict {
     background-color: var(--pb-primary);
 }
 
-/* testimonial */
+
+
+/* -----TESTIMONIAL SECTION ----- */
 
 
 
@@ -215,19 +281,30 @@ nav .btn {
 ******************* */
 
 /* Tablet responsive */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 
     .col_8 {
-        width: calc(100% / 12 * 8);
+        width: calc(100% / 12 * 8 - 20px);
     }
 
     .col_4 {
-        width: calc(100% / 12 * 4);
+        width: calc(100% / 12 * 4 - 20px);
     }
 
     .col_6 {
-        width: 50%;
+        width: calc(50% - 20px); 
     }
+
+/* app store cards  */
+.app_store_container .col_8 {
+    flex-direction: row;
+}
+
+.phone img {
+    width: 100%;
+}
+
+
 
     #testimonial .d_flex {
         flex-direction: row;
@@ -240,18 +317,18 @@ nav .btn {
 
 /* deskopt responsive */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1152px) {
 
     .col_8 {
-        width: calc(100% / 12 * 8);
+        width: calc(100% / 12 * 8 - 20px);
     }
 
     .col_6 {
-        width: 50%;
+        width: calc(50% - 20px);
     }
 
     .col_4 {
-        width: calc(100% / 12 * 4);
+        width: calc(100% / 12 * 4 - 20px);
     }
 
 
