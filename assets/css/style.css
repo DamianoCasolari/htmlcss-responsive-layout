@@ -417,7 +417,7 @@ font-weight: 400;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    width: 240px;
+    width: 200px;
     min-width: 180px;
     aspect-ratio: 1 / 1;
     text-align: end;
@@ -455,6 +455,44 @@ font-weight: 400;
     margin: 0 10px;
     vertical-align: middle;
 }
+
+
+/* --------FINAL BANNER-----------  */
+
+.final_banner_container *{
+    margin: 10px auto;
+}
+#final_banner{
+    color: var(--pb-white);
+}
+#final_banner h3 {
+    font-size: 25px;
+}
+#final_banner h2 {
+    font-size: 40px;
+    color: var(--pb-flash);
+}
+
+#final_banner .fa-circle {
+    font-size: 5px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.final_banner_container .btn {
+        color: var(--pb-primary);
+        background-color: var(--pb-white);
+        padding: 10px 40px;
+        display: inline-block;
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: 700;
+}
+
+#final_banner .special {
+    color: var(--pb-white);
+}
+
 
 /* *********************
         footer
