@@ -412,6 +412,7 @@ font-weight: 400;
     color: var(--pb-primary);
 }
 
+
 #about_us .photo {
     background-image: url("../img/img/about.jpg");
     background-size: cover;
@@ -489,6 +490,10 @@ font-weight: 400;
         font-weight: 700;
 }
 
+.final_banner_container div:last-child {
+    font-size: 12px;
+}
+
 #final_banner .special {
     color: var(--pb-white);
 }
@@ -500,8 +505,17 @@ font-weight: 400;
 
 #app_footer {
     background-color: var(--pb-Dark);
+    color: var(--pb-white);
+    font-size: 12px;
 }
 
+
+#app_footer .final_banner_container p:first-child {
+    margin-bottom: 30px;
+}
+#app_footer .special {
+    color: var(--pb-primary);
+}
 
 /* *********************
         RESPONSIVE
