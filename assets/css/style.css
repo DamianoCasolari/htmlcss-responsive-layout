@@ -72,6 +72,10 @@ a:not(.special) {
     text-align: center;
 }
 
+.br_20 {
+    border-radius: 20px;
+}
+
 .btn {
     border-radius: 50px;
 }
@@ -308,13 +312,60 @@ nav .btn {
 
 /* -----TESTIMONIAL SECTION ----- */
 
-
+.testimonial_container h4 {
+font-weight: 400;
+}
+.testimonial_container .subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--pb-primary);
+    margin: 20px 0;
+}
 
 #testimonial .d_flex {
     align-items: center;
     flex-direction: column;
 }
 
+
+.testimonial_cards_container .card {
+    background-color: var(--pb-primary);
+    margin: 30px 0;
+    color: var(--pb-white);
+}
+
+.testimonial_cards_container .info div:first-child {
+   margin: 30px 0;
+}
+.fa-quote-left,.fa-quote-right {
+   margin: 0 10px;
+   font-size: 20px;
+}
+
+#testimonial .photo {
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 60%;
+    min-width: 180px;
+    aspect-ratio: 1 / 1;
+    
+}
+
+.photo1 {
+    background-image: url("../img/img/testimonial1.jpg");
+}
+.photo2 {
+    background-image: url("../img/img/testimonial2.jpg");
+}
+.photo3 {
+    background-image: url("../img/img/testimonial3.jpg");
+}
+
+
+.name {
+    font-weight: bold;
+}
 
 /* benefit  */
 
@@ -370,7 +421,16 @@ nav .btn {
         text-align: start;
     }
 
+/* testimonia  */
 
+#testimonial .photo {
+    width: 30%;
+    margin: 0 30px 0 0;
+}
+
+.testimonial_cards_container {
+    text-align: start;
+}
 
 
 
