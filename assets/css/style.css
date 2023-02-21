@@ -15,6 +15,7 @@ body {
 img {
     width: 100%;
 }
+
 a:not(.special) {
     text-decoration: none;
 }
@@ -146,7 +147,7 @@ a:not(.special) {
     margin: auto;
 }
 
-#app_header >.col_12 {
+#app_header>.col_12 {
     padding: 10px 20px;
     align-items: center;
     justify-content: space-between;
@@ -157,17 +158,20 @@ a:not(.special) {
     cursor: pointer;
     font-size: 22px;
 }
+
 .fa-bars {
     color: var(--pb-white);
 }
+
 nav {
     display: none;
 }
+
 nav a {
     color: white;
-    
+
     margin: 0 5px;
-    
+
 }
 
 nav .btn {
@@ -190,7 +194,7 @@ nav .btn {
     background-color: var(--pb-firts_cards);
     border-radius: 20px;
     margin: 20px 10px 0 10px;
-    
+
 }
 
 /* first card */
@@ -199,15 +203,18 @@ nav .btn {
     padding: 25px 25px 0 25px;
 
 }
+
 .info_AppStore_card {
     flex-direction: column;
     justify-content: space-evenly;
-   
+
 }
+
 .info_AppStore_card * {
     margin: 10px 0;
-    
+
 }
+
 .info_AppStore_card h3 {
     color: var(--pb-secondary);
 }
@@ -215,19 +222,21 @@ nav .btn {
 .info_AppStore_card i {
     margin: 0 8px;
 }
+
 .info_AppStore_card .btn {
-background-color: var(--pb-secondary);
-color: white;
-padding: 10px 30px;
-display: inline-block;
-font-size: 20px;
-letter-spacing: 3px;
+    background-color: var(--pb-secondary);
+    color: white;
+    padding: 10px 45px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 3px;
 }
 
 .phone {
     justify-content: center;
     align-items: end;
-    
+
 }
 
 .phone img {
@@ -236,9 +245,9 @@ letter-spacing: 3px;
 
 /* other cards */
 
-.app_store_container .col_4 i{
+.app_store_container .col_4 i {
     color: var(--pb-secondary);
-    font-size: 100px;
+    font-size: 70px;
 }
 
 
@@ -249,7 +258,53 @@ letter-spacing: 3px;
     background-color: var(--pb-primary);
 }
 
+.strategy_container h2 {
+    margin: 20px 0;
+}
 
+/* card 1 */
+.planning_card1 {
+    color: var(--pb-white);
+    flex-direction: column;
+
+}
+
+/* card2  */
+
+.strategy_container .col_6:last-child {
+    align-items: end;
+}
+
+.strategy_container .col_6:last-child h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.strategy_container .col_6:last-child p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.strategy_container .col_6:last-child .fa-arrow-down {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+    background-color: var(--pb-primary);
+}
+
+.planning_card2 {
+    color: black;
+    flex-direction: column;
+    background-color: var(--pb-white);
+    border-radius: 50px;
+
+}
+
+.planning_card2 img {
+    width: 80%;
+}
 
 /* -----TESTIMONIAL SECTION ----- */
 
@@ -292,17 +347,30 @@ letter-spacing: 3px;
     }
 
     .col_6 {
-        width: calc(50% - 20px); 
+        width: calc(50% - 20px);
     }
 
-/* app store cards  */
-.app_store_container .col_8 {
-    flex-direction: row;
-}
+    /* app store cards  */
+    .app_store_container .col_8 {
+        flex-direction: row;
+    }
 
-.phone img {
-    width: 100%;
-}
+    .phone img {
+        width: 100%;
+    }
+
+    /* strategic selection  */
+
+
+    .planning_card1 h2 {
+        margin: 90px 0 60px 0;
+    }
+
+    .planning_card1 {
+        text-align: start;
+    }
+
+
 
 
 
@@ -332,15 +400,16 @@ letter-spacing: 3px;
     }
 
 
-/* header */
+    /* header */
 
-.menù {
-    display: none;
-}
-nav {
-    display: block;
-    text-align: end;
-}
+    .menù {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        text-align: end;
+    }
 
     .container_sm {
         width: 40%;
