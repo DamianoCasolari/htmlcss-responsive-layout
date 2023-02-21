@@ -258,7 +258,7 @@ nav .btn {
 /* -----STRATEGY SECTION ----- */
 
 #strategy_planning,
-#benefict {
+#benefit {
     background-color: var(--pb-primary);
 }
 
@@ -367,12 +367,41 @@ font-weight: 400;
     font-weight: bold;
 }
 
-/* benefit  */
+/* --------BENEFITS-----------  */
 
 #benefit .card {
-    align-items: center;
+    background-color: var(--pb-white);
+    color: var(--pb-primary);
+    margin: 10px;
 }
 
+#benefit h2 {
+    color: var(--pb-white);
+    font-size: 28px;
+    margin: 20px 0 ;
+
+}
+#benefit .number {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 0 10px 0 ;
+    display: inline-block;
+
+}
+#benefit p {
+    margin: 30px 0 ;
+
+}
+#benefit .btn {
+    color: var(--pb-white);
+    background-color: var(--pb-primary);
+    padding: 10px 40px;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
 /* *********************
         footer
 ******************* */
