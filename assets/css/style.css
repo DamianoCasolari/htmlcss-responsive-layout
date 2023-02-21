@@ -10,6 +10,7 @@
 body {
     /* font-family: 'Livvic', sans-serif; */
     font-family: 'Poppins', sans-serif;
+    min-width: 285px;
 }
 
 img {
@@ -207,7 +208,7 @@ nav .btn {
 }
 
 /* first card */
-.app_store_container .col_8 {
+.app_store_container .col_md_8 {
     flex-direction: column;
     padding: 25px 25px 0 25px;
 
@@ -235,11 +236,12 @@ nav .btn {
 .info_AppStore_card .btn {
     background-color: var(--pb-secondary);
     color: white;
-    padding: 10px 45px;
+    padding: 10px 35px;
     display: inline-block;
     font-size: 15px;
     font-weight: 800;
     letter-spacing: 3px;
+    min-width: 205px;
 }
 
 .phone {
@@ -254,7 +256,7 @@ nav .btn {
 
 /* other cards */
 
-.app_store_container .col_4 i {
+.app_store_container .col_md_4 i {
     color: var(--pb-secondary);
     font-size: 70px;
 }
@@ -275,21 +277,21 @@ nav .btn {
 
 /* card2  */
 
-.strategy_container .col_6:last-child {
+.strategy_container .col_md_6:last-child {
     align-items: end;
 }
 
-.strategy_container .col_6:last-child h2 {
+.strategy_container .col_md_6:last-child h2 {
     font-weight: bold;
     font-size: 20px;
 }
 
-.strategy_container .col_6:last-child p {
+.strategy_container .col_md_6:last-child p {
     font-weight: bold;
     font-style: italic;
 }
 
-.strategy_container .col_6:last-child .fa-arrow-down {
+.strategy_container .col_md_6:last-child .fa-arrow-down {
     border-radius: 100px;
     width: 40px;
     height: 40px;
@@ -537,20 +539,20 @@ nav .btn {
 /* Tablet responsive */
 @media screen and (min-width: 768px) {
 
-    .col_8 {
+    .col_md_8 {
         width: calc(100% / 12 * 8 - 20px);
     }
 
-    .col_4 {
+    .col_md_4 {
         width: calc(100% / 12 * 4 - 20px);
     }
 
-    .col_6 {
+    .col_md_6 {
         width: calc(50% - 20px);
     }
 
     /* app store cards  */
-    .app_store_container .col_8 {
+    .app_store_container .col_md_8 {
         flex-direction: row;
     }
 
@@ -595,15 +597,15 @@ nav .btn {
 
 @media screen and (min-width: 1152px) {
 
-    .col_8 {
+    .col_lg_8 {
         width: calc(100% / 12 * 8 - 20px);
     }
 
-    .col_6 {
+    .col_lg_6 {
         width: calc(50% - 20px);
     }
 
-    .col_4 {
+    .col_lg_4 {
         width: calc(100% / 12 * 4 - 20px);
     }
 
